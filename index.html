@@ -264,6 +264,7 @@
             </div>
         </div>
 
+
         <!-- Table iframe with loader -->
         <div class="relative mb-6 sm:mb-8" style="min-height: 800px">
             <div id="iframe-loader" class="absolute inset-0 z-10 bg-white rounded-xl flex flex-col items-center justify-center space-y-4">
@@ -275,6 +276,30 @@
                 class="table-iframe"
                 onload="document.getElementById('iframe-loader').style.display = 'none';">
             </iframe>
+        </div>
+
+        <!-- Subscription Form -->
+        <div class="bg-white rounded-xl p-4 sm:p-6 mb-6 sm:mb-8">
+            <h2 class="text-lg sm:text-xl font-semibold mb-4">Subscribe to Updates</h2>
+            <p class="text-gray-600 mb-4">Be the first to know about new Lean AI Native companies, updated metrics, exclusive insights, and cutting-edge trends in the Lean AI native space.</p>
+            <div id="custom-substack-embed"></div>
+
+            <script>
+              window.CustomSubstackWidget = {
+                substackUrl: "henrythe9th.substack.com",
+                placeholder: "example@gmail.com",
+                buttonText: "Subscribe",
+                theme: "custom",
+                colors: {
+                  primary: "#2563EB",
+                  input: "#FFFCFC",
+                  email: "#000000",
+                  text: "#FFFBFB",
+                },
+                // Go to substackapi.com to unlock custom redirect
+              };
+            </script>
+            <script src="https://substackapi.com/widget.js" async></script>
         </div>
 
         <!-- Qualification Criteria -->
